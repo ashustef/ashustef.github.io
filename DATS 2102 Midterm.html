@@ -1,0 +1,2294 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Anthony Shustef">
+<meta name="dcterms.date" content="2025-03-02">
+
+<title>DATS 2102 Midterm Submission</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="DATS 2102 Midterm_files/libs/clipboard/clipboard.min.js"></script>
+<script src="DATS 2102 Midterm_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="DATS 2102 Midterm_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="DATS 2102 Midterm_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="DATS 2102 Midterm_files/libs/quarto-html/popper.min.js"></script>
+<script src="DATS 2102 Midterm_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="DATS 2102 Midterm_files/libs/quarto-html/anchor.min.js"></script>
+<link href="DATS 2102 Midterm_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="DATS 2102 Midterm_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="DATS 2102 Midterm_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="DATS 2102 Midterm_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="DATS 2102 Midterm_files/libs/bootstrap/bootstrap-9e3ffae467580fdb927a41352e75a2e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of Contents</h2>
+   
+  <ul>
+  <li><a href="#dats-2102-midterm-project---safety-on-the-railroad" id="toc-dats-2102-midterm-project---safety-on-the-railroad" class="nav-link active" data-scroll-target="#dats-2102-midterm-project---safety-on-the-railroad">DATS 2102 Midterm Project - Safety on the Railroad</a>
+  <ul class="collapse">
+  <li><a href="#overview-of-dataset" id="toc-overview-of-dataset" class="nav-link" data-scroll-target="#overview-of-dataset">Overview of Dataset</a></li>
+  <li><a href="#research-questions-for-analysis" id="toc-research-questions-for-analysis" class="nav-link" data-scroll-target="#research-questions-for-analysis">Research Questions for Analysis</a></li>
+  <li><a href="#preparation-for-visualization" id="toc-preparation-for-visualization" class="nav-link" data-scroll-target="#preparation-for-visualization">Preparation for Visualization</a></li>
+  <li><a href="#exhibit-a-which-state-has-the-largest-number-of-railroad-accidents-per-square-mile" id="toc-exhibit-a-which-state-has-the-largest-number-of-railroad-accidents-per-square-mile" class="nav-link" data-scroll-target="#exhibit-a-which-state-has-the-largest-number-of-railroad-accidents-per-square-mile">Exhibit A: Which State Has the Largest Number of Railroad Accidents per Square Mile?</a></li>
+  <li><a href="#exhibit-b-which-railroads-have-the-highest-equipment-damage-costs" id="toc-exhibit-b-which-railroads-have-the-highest-equipment-damage-costs" class="nav-link" data-scroll-target="#exhibit-b-which-railroads-have-the-highest-equipment-damage-costs">Exhibit B: Which Railroads Have the Highest Equipment Damage Costs?</a></li>
+  <li><a href="#exhibit-c-change-in-equipment-damage-costs-over-time" id="toc-exhibit-c-change-in-equipment-damage-costs-over-time" class="nav-link" data-scroll-target="#exhibit-c-change-in-equipment-damage-costs-over-time">Exhibit C: Change in Equipment Damage Costs Over Time</a></li>
+  <li><a href="#written-narrative" id="toc-written-narrative" class="nav-link" data-scroll-target="#written-narrative">Written Narrative</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">DATS 2102 Midterm Submission</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Anthony Shustef </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 2, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="dats-2102-midterm-project---safety-on-the-railroad" class="level1">
+<h1>DATS 2102 Midterm Project - Safety on the Railroad</h1>
+<section id="overview-of-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="overview-of-dataset">Overview of Dataset</h3>
+<p>This dataset, <strong>railroad.csv</strong>, focuses on the evaluation of major accidents and similar incidents along rights-of-way of major Class I freight railroads to compare the number of incidents for each railroad and the magnitude of the incident. The following visualizations are based upon <strong>railroad.csv</strong>.</p>
+<p><em>This dataset was provided by the Federal Railroad Administration (FRA).</em></p>
+</section>
+<section id="research-questions-for-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="research-questions-for-analysis">Research Questions for Analysis</h2>
+<ol type="1">
+<li>Which states have the largest numbers of railroad accidents?</li>
+<li>What is the distribution of equipment damage costs among a subset of predetermined railroads?</li>
+<li>Which year has the largest number of railroad accidents? Are there any statistical outliers?</li>
+<li>Does weather condition or time of day impact the number of railroad accidents?</li>
+<li>Which division of railroad trackage has the largest numbers of accidents?</li>
+</ol>
+<div id="5d0b99395fc6a1a5" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-20T01:37:26.666833800Z&quot;,&quot;start_time&quot;:&quot;2026-03-20T01:37:21.757289200Z&quot;}}" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">"ignore"</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>railroad <span class="op">=</span> pd.read_csv(<span class="st">'Rail_Equipment_Accident_Incident_Data__Form_54_.csv'</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>railroad.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="1">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Code</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Name</th>
+<th data-quarto-table-cell-role="th">Year</th>
+<th data-quarto-table-cell-role="th">Accident Number</th>
+<th data-quarto-table-cell-role="th">PDF Link</th>
+<th data-quarto-table-cell-role="th">Accident Year</th>
+<th data-quarto-table-cell-role="th">Accident Month</th>
+<th data-quarto-table-cell-role="th">Other Railroad Code</th>
+<th data-quarto-table-cell-role="th">Other Railroad Name</th>
+<th data-quarto-table-cell-role="th">Other Accident Number</th>
+<th data-quarto-table-cell-role="th">...</th>
+<th data-quarto-table-cell-role="th">Reporting Parent Railroad Name</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Holding Company</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Individual Class</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Passenger</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Commuter</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Switching Terminal</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Tourist</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Freight</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Short Line</th>
+<th data-quarto-table-cell-role="th">Location</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>UP</td>
+<td>Union Pacific Railroad Company</td>
+<td>1975</td>
+<td>1275NP201</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>75</td>
+<td>12</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>Union Pacific Railroad Company</td>
+<td>Union Pacific Railroad Company</td>
+<td>Class I</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Unassigned</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>SOO</td>
+<td>SOO Line Railroad Company</td>
+<td>1999</td>
+<td>154107</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>99</td>
+<td>9</td>
+<td>WC</td>
+<td>WISCONSIN CENTRAL LTD.</td>
+<td>G4606</td>
+<td>...</td>
+<td>CANADIAN PACIFIC KANSAS CITY</td>
+<td>Not Assigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>CSX</td>
+<td>CSX Transportation</td>
+<td>2007</td>
+<td>000028424</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>7</td>
+<td>1</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>CSX Transportation</td>
+<td>CSX Transportation</td>
+<td>Class I</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Unassigned</td>
+<td>POINT (0 0)</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>CSX</td>
+<td>CSX Transportation</td>
+<td>2007</td>
+<td>000035140</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>7</td>
+<td>4</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>CSX Transportation</td>
+<td>CSX Transportation</td>
+<td>Class I</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Unassigned</td>
+<td>POINT (0 0)</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>CSX</td>
+<td>CSX Transportation</td>
+<td>2007</td>
+<td>000032761</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>7</td>
+<td>5</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>CSX Transportation</td>
+<td>CSX Transportation</td>
+<td>Class I</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Unassigned</td>
+<td>POINT (0 0)</td>
+</tr>
+</tbody>
+</table>
+
+<p>5 rows × 155 columns</p>
+</div>
+</div>
+</div>
+<div id="f5296230a2b8c03e" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-20T01:37:26.819339800Z&quot;,&quot;start_time&quot;:&quot;2026-03-20T01:37:26.679429200Z&quot;}}" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>railroad_FEC <span class="op">=</span> railroad[railroad[<span class="st">"Reporting Railroad Code"</span>] <span class="op">==</span> <span class="st">"FEC"</span>]</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>railroad_FEC</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="2">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Code</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Name</th>
+<th data-quarto-table-cell-role="th">Year</th>
+<th data-quarto-table-cell-role="th">Accident Number</th>
+<th data-quarto-table-cell-role="th">PDF Link</th>
+<th data-quarto-table-cell-role="th">Accident Year</th>
+<th data-quarto-table-cell-role="th">Accident Month</th>
+<th data-quarto-table-cell-role="th">Other Railroad Code</th>
+<th data-quarto-table-cell-role="th">Other Railroad Name</th>
+<th data-quarto-table-cell-role="th">Other Accident Number</th>
+<th data-quarto-table-cell-role="th">...</th>
+<th data-quarto-table-cell-role="th">Reporting Parent Railroad Name</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Holding Company</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Individual Class</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Passenger</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Commuter</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Switching Terminal</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Tourist</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Freight</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Short Line</th>
+<th data-quarto-table-cell-role="th">Location</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">152</th>
+<td>FEC</td>
+<td>Florida East Coast Railway Company</td>
+<td>2017</td>
+<td>D35060717</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>17</td>
+<td>6</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>Florida East Coast Railway Company</td>
+<td>Railroad Acquisition Holdings</td>
+<td>Class II</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>POINT (-80.078156 26.764844)</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">341</th>
+<td>FEC</td>
+<td>Florida East Coast Railway Company</td>
+<td>2007</td>
+<td>D71082107</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>7</td>
+<td>8</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>Florida East Coast Railway Company</td>
+<td>Railroad Acquisition Holdings</td>
+<td>Class II</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>POINT (0 0)</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">454</th>
+<td>FEC</td>
+<td>Florida East Coast Railway Company</td>
+<td>2007</td>
+<td>D98110207</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>7</td>
+<td>11</td>
+<td>NS</td>
+<td>Norfolk Southern Railway Company</td>
+<td>030811</td>
+<td>...</td>
+<td>Florida East Coast Railway Company</td>
+<td>Railroad Acquisition Holdings</td>
+<td>Class II</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>POINT (0 0)</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">789</th>
+<td>FEC</td>
+<td>Florida East Coast Railway Company</td>
+<td>1997</td>
+<td>65338JU7</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>97</td>
+<td>7</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>Florida East Coast Railway Company</td>
+<td>Railroad Acquisition Holdings</td>
+<td>Class II</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">904</th>
+<td>FEC</td>
+<td>Florida East Coast Railway Company</td>
+<td>1997</td>
+<td>65337JU7</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>97</td>
+<td>7</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>Florida East Coast Railway Company</td>
+<td>Railroad Acquisition Holdings</td>
+<td>Class II</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">221865</th>
+<td>FEC</td>
+<td>Florida East Coast Railway Company</td>
+<td>2004</td>
+<td>X29111004</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>4</td>
+<td>11</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>Florida East Coast Railway Company</td>
+<td>Railroad Acquisition Holdings</td>
+<td>Class II</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>POINT (0 0)</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">222196</th>
+<td>FEC</td>
+<td>Florida East Coast Railway Company</td>
+<td>2005</td>
+<td>D40032105</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>5</td>
+<td>3</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>Florida East Coast Railway Company</td>
+<td>Railroad Acquisition Holdings</td>
+<td>Class II</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>POINT (0 0)</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">222287</th>
+<td>FEC</td>
+<td>Florida East Coast Railway Company</td>
+<td>2004</td>
+<td>D67A071604</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>4</td>
+<td>7</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>Florida East Coast Railway Company</td>
+<td>Railroad Acquisition Holdings</td>
+<td>Class II</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>POINT (0 0)</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">222333</th>
+<td>FEC</td>
+<td>Florida East Coast Railway Company</td>
+<td>2005</td>
+<td>D12013105</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>5</td>
+<td>1</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>Florida East Coast Railway Company</td>
+<td>Railroad Acquisition Holdings</td>
+<td>Class II</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>POINT (0 0)</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">222339</th>
+<td>FEC</td>
+<td>Florida East Coast Railway Company</td>
+<td>2004</td>
+<td>D128121004</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>4</td>
+<td>12</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>Florida East Coast Railway Company</td>
+<td>Railroad Acquisition Holdings</td>
+<td>Class II</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>POINT (0 0)</td>
+</tr>
+</tbody>
+</table>
+
+<p>740 rows × 155 columns</p>
+</div>
+</div>
+</div>
+</section>
+<section id="preparation-for-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="preparation-for-visualization">Preparation for Visualization</h2>
+<p>In this section, I prepared the dataset for visualization by filtering the dataset, aggregating, joining, and other operations to clean the data.</p>
+<div id="fb106b222c61b9fd" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-20T01:58:54.776054300Z&quot;,&quot;start_time&quot;:&quot;2026-03-20T01:58:54.403952900Z&quot;}}" data-execution_count="17">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>codes <span class="op">=</span> railroad[<span class="st">"Reporting Railroad Code"</span>].dropna().unique()[:<span class="dv">5</span>]</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> railroad[railroad[<span class="st">"Reporting Railroad Code"</span>].isin(codes)].copy()</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>areas <span class="op">=</span> pd.read_csv(<span class="st">"state-areas.csv"</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>areas[<span class="st">"states_upper"</span>] <span class="op">=</span> areas[<span class="st">"state"</span>].<span class="bu">str</span>.upper()</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"Equipment Damage Cost"</span>] <span class="op">=</span> pd.to_numeric(df[<span class="st">"Equipment Damage Cost"</span>], errors<span class="op">=</span><span class="st">"coerce"</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"Total Persons Injured"</span>] <span class="op">=</span> pd.to_numeric(df[<span class="st">"Total Persons Injured"</span>], errors<span class="op">=</span><span class="st">"coerce"</span>)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>df_filtered <span class="op">=</span> df[(df[<span class="st">"Equipment Damage Cost"</span>] <span class="op">&lt;</span> <span class="dv">40000</span>) <span class="op">&amp;</span> (df[<span class="st">"Equipment Damage Cost"</span>] <span class="op">&gt;=</span> <span class="dv">0</span>) <span class="op">&amp;</span> (df[<span class="st">"Train Speed"</span>] <span class="op">&lt;=</span> <span class="dv">50</span>)]</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>summary <span class="op">=</span> (</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">"Reporting Railroad Code"</span>, as_index<span class="op">=</span><span class="va">False</span>)[<span class="st">"Equipment Damage Cost"</span>]</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>.mean()</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>.dropna()</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>.sort_values(<span class="st">"Equipment Damage Cost"</span>)</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>summary_passengers <span class="op">=</span> (</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">"Reporting Railroad Code"</span>, as_index<span class="op">=</span><span class="va">False</span>)[<span class="st">"Total Persons Injured"</span>]</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>.mean()</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>.dropna()</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>.sort_values(<span class="st">"Total Persons Injured"</span>)</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>summary.head()</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>areas.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="17">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">state</th>
+<th data-quarto-table-cell-role="th">area (sq. mi)</th>
+<th data-quarto-table-cell-role="th">states_upper</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>Alabama</td>
+<td>52423</td>
+<td>ALABAMA</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>Alaska</td>
+<td>656425</td>
+<td>ALASKA</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>Arizona</td>
+<td>114006</td>
+<td>ARIZONA</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>Arkansas</td>
+<td>53182</td>
+<td>ARKANSAS</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>California</td>
+<td>163707</td>
+<td>CALIFORNIA</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="e79901b3a98ed726" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-20T02:31:24.625092600Z&quot;,&quot;start_time&quot;:&quot;2026-03-20T02:31:24.498668600Z&quot;}}" data-execution_count="39">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#state_accident_count = df.groupby(by="State Name").size().to_frame("Number of Accidents")</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>state_accident_count <span class="op">=</span> df.pivot_table(index<span class="op">=</span><span class="st">"State Name"</span>, values<span class="op">=</span><span class="st">"Milepost"</span>, aggfunc<span class="op">=</span><span class="st">"count"</span>).rename(columns<span class="op">=</span>{<span class="st">"Milepost"</span>:<span class="st">"Number of Accidents"</span>})</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>state_joined <span class="op">=</span> state_accident_count.merge(</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    areas,</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    left_on<span class="op">=</span><span class="st">"State Name"</span>, right_on<span class="op">=</span><span class="st">"states_upper"</span>, how<span class="op">=</span><span class="st">"left"</span>, validate<span class="op">=</span><span class="st">"1:1"</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>state_joined[<span class="st">"Accidents/Square Mile"</span>] <span class="op">=</span> state_joined[<span class="st">"Number of Accidents"</span>]<span class="op">/</span>state_joined[<span class="st">"area (sq. mi)"</span>]</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>state_joined</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="39">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Number of Accidents</th>
+<th data-quarto-table-cell-role="th">state</th>
+<th data-quarto-table-cell-role="th">area (sq. mi)</th>
+<th data-quarto-table-cell-role="th">states_upper</th>
+<th data-quarto-table-cell-role="th">Accidents/Square Mile</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>1022</td>
+<td>Alabama</td>
+<td>52423</td>
+<td>ALABAMA</td>
+<td>0.019495</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>611</td>
+<td>Arizona</td>
+<td>114006</td>
+<td>ARIZONA</td>
+<td>0.005359</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>2320</td>
+<td>Arkansas</td>
+<td>53182</td>
+<td>ARKANSAS</td>
+<td>0.043624</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>3922</td>
+<td>California</td>
+<td>163707</td>
+<td>CALIFORNIA</td>
+<td>0.023957</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>1264</td>
+<td>Colorado</td>
+<td>104100</td>
+<td>COLORADO</td>
+<td>0.012142</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">5</th>
+<td>10</td>
+<td>Connecticut</td>
+<td>5544</td>
+<td>CONNECTICUT</td>
+<td>0.001804</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">6</th>
+<td>37</td>
+<td>Delaware</td>
+<td>1954</td>
+<td>DELAWARE</td>
+<td>0.018936</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">7</th>
+<td>25</td>
+<td>District of Columbia</td>
+<td>68</td>
+<td>DISTRICT OF COLUMBIA</td>
+<td>0.367647</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">8</th>
+<td>1076</td>
+<td>Florida</td>
+<td>65758</td>
+<td>FLORIDA</td>
+<td>0.016363</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">9</th>
+<td>1739</td>
+<td>Georgia</td>
+<td>59441</td>
+<td>GEORGIA</td>
+<td>0.029256</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">10</th>
+<td>1333</td>
+<td>Idaho</td>
+<td>83574</td>
+<td>IDAHO</td>
+<td>0.015950</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">11</th>
+<td>3584</td>
+<td>Illinois</td>
+<td>57918</td>
+<td>ILLINOIS</td>
+<td>0.061881</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">12</th>
+<td>1082</td>
+<td>Indiana</td>
+<td>36420</td>
+<td>INDIANA</td>
+<td>0.029709</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">13</th>
+<td>1665</td>
+<td>Iowa</td>
+<td>56276</td>
+<td>IOWA</td>
+<td>0.029586</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">14</th>
+<td>2141</td>
+<td>Kansas</td>
+<td>82282</td>
+<td>KANSAS</td>
+<td>0.026020</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">15</th>
+<td>1165</td>
+<td>Kentucky</td>
+<td>40411</td>
+<td>KENTUCKY</td>
+<td>0.028829</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">16</th>
+<td>1830</td>
+<td>Louisiana</td>
+<td>51843</td>
+<td>LOUISIANA</td>
+<td>0.035299</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">17</th>
+<td>8</td>
+<td>Maine</td>
+<td>35387</td>
+<td>MAINE</td>
+<td>0.000226</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">18</th>
+<td>660</td>
+<td>Maryland</td>
+<td>12407</td>
+<td>MARYLAND</td>
+<td>0.053196</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">19</th>
+<td>135</td>
+<td>Massachusetts</td>
+<td>10555</td>
+<td>MASSACHUSETTS</td>
+<td>0.012790</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">20</th>
+<td>367</td>
+<td>Michigan</td>
+<td>96810</td>
+<td>MICHIGAN</td>
+<td>0.003791</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">21</th>
+<td>1869</td>
+<td>Minnesota</td>
+<td>86943</td>
+<td>MINNESOTA</td>
+<td>0.021497</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">22</th>
+<td>93</td>
+<td>Mississippi</td>
+<td>48434</td>
+<td>MISSISSIPPI</td>
+<td>0.001920</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">23</th>
+<td>1666</td>
+<td>Missouri</td>
+<td>69709</td>
+<td>MISSOURI</td>
+<td>0.023899</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">24</th>
+<td>462</td>
+<td>Montana</td>
+<td>147046</td>
+<td>MONTANA</td>
+<td>0.003142</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">25</th>
+<td>3386</td>
+<td>Nebraska</td>
+<td>77358</td>
+<td>NEBRASKA</td>
+<td>0.043771</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">26</th>
+<td>464</td>
+<td>Nevada</td>
+<td>110567</td>
+<td>NEVADA</td>
+<td>0.004197</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">27</th>
+<td>2</td>
+<td>New Hampshire</td>
+<td>9351</td>
+<td>NEW HAMPSHIRE</td>
+<td>0.000214</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">28</th>
+<td>101</td>
+<td>New Jersey</td>
+<td>8722</td>
+<td>NEW JERSEY</td>
+<td>0.011580</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">29</th>
+<td>396</td>
+<td>New Mexico</td>
+<td>121593</td>
+<td>NEW MEXICO</td>
+<td>0.003257</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">30</th>
+<td>935</td>
+<td>New York</td>
+<td>54475</td>
+<td>NEW YORK</td>
+<td>0.017164</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">31</th>
+<td>742</td>
+<td>North Carolina</td>
+<td>53821</td>
+<td>NORTH CAROLINA</td>
+<td>0.013786</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">32</th>
+<td>655</td>
+<td>North Dakota</td>
+<td>70704</td>
+<td>NORTH DAKOTA</td>
+<td>0.009264</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">33</th>
+<td>1586</td>
+<td>Ohio</td>
+<td>44828</td>
+<td>OHIO</td>
+<td>0.035380</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">34</th>
+<td>965</td>
+<td>Oklahoma</td>
+<td>69903</td>
+<td>OKLAHOMA</td>
+<td>0.013805</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">35</th>
+<td>1520</td>
+<td>Oregon</td>
+<td>98386</td>
+<td>OREGON</td>
+<td>0.015449</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">36</th>
+<td>423</td>
+<td>Pennsylvania</td>
+<td>46058</td>
+<td>PENNSYLVANIA</td>
+<td>0.009184</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">37</th>
+<td>683</td>
+<td>South Carolina</td>
+<td>32007</td>
+<td>SOUTH CAROLINA</td>
+<td>0.021339</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">38</th>
+<td>128</td>
+<td>South Dakota</td>
+<td>77121</td>
+<td>SOUTH DAKOTA</td>
+<td>0.001660</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">39</th>
+<td>1150</td>
+<td>Tennessee</td>
+<td>42146</td>
+<td>TENNESSEE</td>
+<td>0.027286</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">40</th>
+<td>8146</td>
+<td>Texas</td>
+<td>268601</td>
+<td>TEXAS</td>
+<td>0.030328</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">41</th>
+<td>1267</td>
+<td>Utah</td>
+<td>84904</td>
+<td>UTAH</td>
+<td>0.014923</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">42</th>
+<td>650</td>
+<td>Virginia</td>
+<td>42769</td>
+<td>VIRGINIA</td>
+<td>0.015198</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">43</th>
+<td>976</td>
+<td>Washington</td>
+<td>71303</td>
+<td>WASHINGTON</td>
+<td>0.013688</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">44</th>
+<td>551</td>
+<td>West Virginia</td>
+<td>24231</td>
+<td>WEST VIRGINIA</td>
+<td>0.022739</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">45</th>
+<td>1230</td>
+<td>Wisconsin</td>
+<td>65503</td>
+<td>WISCONSIN</td>
+<td>0.018778</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">46</th>
+<td>2009</td>
+<td>Wyoming</td>
+<td>97818</td>
+<td>WYOMING</td>
+<td>0.020538</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="exhibit-a-which-state-has-the-largest-number-of-railroad-accidents-per-square-mile" class="level2">
+<h2 class="anchored" data-anchor-id="exhibit-a-which-state-has-the-largest-number-of-railroad-accidents-per-square-mile">Exhibit A: Which State Has the Largest Number of Railroad Accidents per Square Mile?</h2>
+<p>This short section is meant to answer the question as to which state tends to have the largest number of railroad accidents per square mile. This question is answered with a simple bar chart using 5 states with the highest number of accidents in the descending order.</p>
+<div id="b0a91554d988ff" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-20T02:31:27.449019Z&quot;,&quot;start_time&quot;:&quot;2026-03-20T02:31:27.285870600Z&quot;}}" data-execution_count="40">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Matplotlib bar chart</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>state_joined_sorted <span class="op">=</span> state_joined.sort_values(by<span class="op">=</span><span class="st">"Accidents/Square Mile"</span>, ascending<span class="op">=</span><span class="va">False</span>)[:<span class="dv">5</span>]</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>sns.barplot(data<span class="op">=</span>state_joined_sorted, x<span class="op">=</span><span class="st">"state"</span>, y<span class="op">=</span><span class="st">"Accidents/Square Mile"</span>, errorbar<span class="op">=</span><span class="va">None</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Top 5 Railroad Accidents per Square Mile for Each U.S. State"</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"State"</span>)<span class="op">;</span> plt.ylabel(<span class="st">"Accidents per Square Mile"</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="DATS%202102%20Midterm_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="exhibit-b-which-railroads-have-the-highest-equipment-damage-costs" class="level2">
+<h2 class="anchored" data-anchor-id="exhibit-b-which-railroads-have-the-highest-equipment-damage-costs">Exhibit B: Which Railroads Have the Highest Equipment Damage Costs?</h2>
+<p>This section is meant to answer the question as to which railroad tends to incur the highest number of equipment damage costs due to accidents and other similar incidents. This question is answered using distribution plots such as boxplots and violin plots as well as bar graphs.</p>
+<div id="ddca7fc08a2b0e19" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-20T01:37:34.822381Z&quot;,&quot;start_time&quot;:&quot;2026-03-20T01:37:32.912259600Z&quot;}}" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># REVISED Violin Plot</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>sns.violinplot(data<span class="op">=</span>df_filtered, x<span class="op">=</span><span class="st">'Reporting Railroad Code'</span>, y<span class="op">=</span><span class="st">'Equipment Damage Cost'</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>plt.text(x<span class="op">=</span><span class="fl">1.8</span>, y<span class="op">=</span><span class="dv">4</span>, s<span class="op">=</span><span class="st">""</span>, fontsize<span class="op">=</span><span class="dv">12</span>, color<span class="op">=</span><span class="st">'white'</span>, weight<span class="op">=</span><span class="st">'bold'</span>, bbox<span class="op">=</span><span class="bu">dict</span>(facecolor<span class="op">=</span><span class="st">'black'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<pre><code>Text(1.8, 4, '')</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="DATS%202102%20Midterm_files/figure-html/cell-7-output-2.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="a6a7147f5c03c16f" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-20T01:37:35.305870100Z&quot;,&quot;start_time&quot;:&quot;2026-03-20T01:37:34.935651900Z&quot;}}" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Boxplot</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>sns.boxplot(data<span class="op">=</span>df_filtered, x<span class="op">=</span><span class="st">'Reporting Railroad Code'</span>, y<span class="op">=</span><span class="st">'Equipment Damage Cost'</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>plt.text(x<span class="op">=</span><span class="fl">1.8</span>, y<span class="op">=</span><span class="dv">4</span>, s<span class="op">=</span><span class="st">""</span>, fontsize<span class="op">=</span><span class="dv">12</span>, color<span class="op">=</span><span class="st">'white'</span>, weight<span class="op">=</span><span class="st">'bold'</span>, bbox<span class="op">=</span><span class="bu">dict</span>(facecolor<span class="op">=</span><span class="st">'black'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="5">
+<pre><code>Text(1.8, 4, '')</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="DATS%202102%20Midterm_files/figure-html/cell-8-output-2.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="a9430d6b019b5345" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-20T01:37:37.845490300Z&quot;,&quot;start_time&quot;:&quot;2026-03-20T01:37:36.521292200Z&quot;}}" data-execution_count="8">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># REVISED Violin Plot</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>sns.violinplot(data<span class="op">=</span>df_filtered, x<span class="op">=</span><span class="st">'Reporting Railroad Code'</span>, y<span class="op">=</span><span class="st">'Equipment Damage Cost'</span>, hue<span class="op">=</span><span class="st">'Reporting Railroad Code'</span>)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>plt.text(x<span class="op">=</span><span class="fl">1.8</span>, y<span class="op">=</span><span class="dv">4</span>, s<span class="op">=</span><span class="st">""</span>, fontsize<span class="op">=</span><span class="dv">12</span>, color<span class="op">=</span><span class="st">'white'</span>, weight<span class="op">=</span><span class="st">'bold'</span>, bbox<span class="op">=</span><span class="bu">dict</span>(facecolor<span class="op">=</span><span class="st">'black'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>))</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>plt.text(x<span class="op">=</span><span class="fl">3.5</span>, y<span class="op">=</span><span class="fl">49000.5</span>, s<span class="op">=</span><span class="st">"Highest cost"</span>, fontsize<span class="op">=</span><span class="dv">12</span>, color<span class="op">=</span><span class="st">'white'</span>, weight<span class="op">=</span><span class="st">'bold'</span>, bbox<span class="op">=</span><span class="bu">dict</span>(facecolor<span class="op">=</span><span class="st">'black'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>))</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>plt.text(x<span class="op">=</span><span class="fl">3.5</span>, y<span class="op">=-</span><span class="fl">15000.5</span>, s<span class="op">=</span><span class="st">"Lowest cost"</span>, fontsize<span class="op">=</span><span class="dv">12</span>, color<span class="op">=</span><span class="st">'white'</span>, weight<span class="op">=</span><span class="st">'bold'</span>, bbox<span class="op">=</span><span class="bu">dict</span>(facecolor<span class="op">=</span><span class="st">'black'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="8">
+<pre><code>Text(3.5, -15000.5, 'Lowest cost')</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="DATS%202102%20Midterm_files/figure-html/cell-9-output-2.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="726d074928341282" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-20T01:37:38.187839800Z&quot;,&quot;start_time&quot;:&quot;2026-03-20T01:37:37.968501500Z&quot;}}" data-execution_count="9">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="9">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Code</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Name</th>
+<th data-quarto-table-cell-role="th">Year</th>
+<th data-quarto-table-cell-role="th">Accident Number</th>
+<th data-quarto-table-cell-role="th">PDF Link</th>
+<th data-quarto-table-cell-role="th">Accident Year</th>
+<th data-quarto-table-cell-role="th">Accident Month</th>
+<th data-quarto-table-cell-role="th">Other Railroad Code</th>
+<th data-quarto-table-cell-role="th">Other Railroad Name</th>
+<th data-quarto-table-cell-role="th">Other Accident Number</th>
+<th data-quarto-table-cell-role="th">...</th>
+<th data-quarto-table-cell-role="th">Reporting Parent Railroad Name</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Holding Company</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Individual Class</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Passenger</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Commuter</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Switching Terminal</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Tourist</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Freight</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Short Line</th>
+<th data-quarto-table-cell-role="th">Location</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>UP</td>
+<td>Union Pacific Railroad Company</td>
+<td>1975</td>
+<td>1275NP201</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>75</td>
+<td>12</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>Union Pacific Railroad Company</td>
+<td>Union Pacific Railroad Company</td>
+<td>Class I</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Unassigned</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>SOO</td>
+<td>SOO Line Railroad Company</td>
+<td>1999</td>
+<td>154107</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>99</td>
+<td>9</td>
+<td>WC</td>
+<td>WISCONSIN CENTRAL LTD.</td>
+<td>G4606</td>
+<td>...</td>
+<td>CANADIAN PACIFIC KANSAS CITY</td>
+<td>Not Assigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>CSX</td>
+<td>CSX Transportation</td>
+<td>2007</td>
+<td>000028424</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>7</td>
+<td>1</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>CSX Transportation</td>
+<td>CSX Transportation</td>
+<td>Class I</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Unassigned</td>
+<td>POINT (0 0)</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>CSX</td>
+<td>CSX Transportation</td>
+<td>2007</td>
+<td>000035140</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>7</td>
+<td>4</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>CSX Transportation</td>
+<td>CSX Transportation</td>
+<td>Class I</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Unassigned</td>
+<td>POINT (0 0)</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>CSX</td>
+<td>CSX Transportation</td>
+<td>2007</td>
+<td>000032761</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>7</td>
+<td>5</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>CSX Transportation</td>
+<td>CSX Transportation</td>
+<td>Class I</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Unassigned</td>
+<td>POINT (0 0)</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">223686</th>
+<td>BNSF</td>
+<td>BNSF Railway Company</td>
+<td>2023</td>
+<td>NW0323113</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>23</td>
+<td>3</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>BNSF Railway Company</td>
+<td>BNSF Railway Company</td>
+<td>Class I</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Unassigned</td>
+<td>POINT (-122.518197 48.459529)</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">223687</th>
+<td>UP</td>
+<td>Union Pacific Railroad Company</td>
+<td>2020</td>
+<td>0220GP005</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>20</td>
+<td>2</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>Union Pacific Railroad Company</td>
+<td>Union Pacific Railroad Company</td>
+<td>Class I</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Unassigned</td>
+<td>POINT (-104.818456 41.127445)</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">223688</th>
+<td>BNSF</td>
+<td>BNSF Railway Company</td>
+<td>2011</td>
+<td>NW0411106</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>11</td>
+<td>4</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>BNSF Railway Company</td>
+<td>BNSF Railway Company</td>
+<td>Class I</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Unassigned</td>
+<td>POINT (0 0)</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">223689</th>
+<td>UP</td>
+<td>Union Pacific Railroad Company</td>
+<td>2015</td>
+<td>0115NP051</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>15</td>
+<td>1</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>Union Pacific Railroad Company</td>
+<td>Union Pacific Railroad Company</td>
+<td>Class I</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Unassigned</td>
+<td>POINT (-104.911355 42.761856)</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">223690</th>
+<td>UP</td>
+<td>Union Pacific Railroad Company</td>
+<td>2015</td>
+<td>0315PC006</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>15</td>
+<td>3</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>Union Pacific Railroad Company</td>
+<td>Union Pacific Railroad Company</td>
+<td>Class I</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Unassigned</td>
+<td>POINT (-110.946591 42.024589)</td>
+</tr>
+</tbody>
+</table>
+
+<p>67660 rows × 155 columns</p>
+</div>
+</div>
+</div>
+<div id="f307ef44d8befdf7" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-20T01:37:45.680294100Z&quot;,&quot;start_time&quot;:&quot;2026-03-20T01:37:38.342888200Z&quot;}}" data-execution_count="10">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>railroad <span class="op">=</span> pd.read_csv(<span class="st">'Rail_Equipment_Accident_Incident_Data__Form_54_.csv'</span>)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co">#codes = railroad["Reporting Railroad Code"].dropna().unique()[:10]</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>codes <span class="op">=</span> [<span class="st">'BNSF'</span>, <span class="st">'UP'</span>, <span class="st">'CSX'</span>, <span class="st">'KCS'</span>, <span class="st">'CP'</span>, <span class="st">'CN'</span>, <span class="st">'NS'</span>, <span class="st">'ATK'</span>, <span class="st">'FEC'</span>, <span class="st">'SCAX'</span>]</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>df_new <span class="op">=</span> railroad[railroad[<span class="st">"Reporting Railroad Code"</span>].isin(codes)].copy()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="e4f1d1f0aa394405" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-20T01:37:54.928292400Z&quot;,&quot;start_time&quot;:&quot;2026-03-20T01:37:52.974184700Z&quot;}}" data-execution_count="11">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>df_new</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="11">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Code</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Name</th>
+<th data-quarto-table-cell-role="th">Year</th>
+<th data-quarto-table-cell-role="th">Accident Number</th>
+<th data-quarto-table-cell-role="th">PDF Link</th>
+<th data-quarto-table-cell-role="th">Accident Year</th>
+<th data-quarto-table-cell-role="th">Accident Month</th>
+<th data-quarto-table-cell-role="th">Other Railroad Code</th>
+<th data-quarto-table-cell-role="th">Other Railroad Name</th>
+<th data-quarto-table-cell-role="th">Other Accident Number</th>
+<th data-quarto-table-cell-role="th">...</th>
+<th data-quarto-table-cell-role="th">Reporting Parent Railroad Name</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Holding Company</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Individual Class</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Passenger</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Commuter</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Switching Terminal</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Tourist</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Freight</th>
+<th data-quarto-table-cell-role="th">Reporting Railroad Short Line</th>
+<th data-quarto-table-cell-role="th">Location</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>UP</td>
+<td>Union Pacific Railroad Company</td>
+<td>1975</td>
+<td>1275NP201</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>75</td>
+<td>12</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>Union Pacific Railroad Company</td>
+<td>Union Pacific Railroad Company</td>
+<td>Class I</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Unassigned</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">2</th>
+<td>CSX</td>
+<td>CSX Transportation</td>
+<td>2007</td>
+<td>000028424</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>7</td>
+<td>1</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>CSX Transportation</td>
+<td>CSX Transportation</td>
+<td>Class I</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Unassigned</td>
+<td>POINT (0 0)</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">3</th>
+<td>CSX</td>
+<td>CSX Transportation</td>
+<td>2007</td>
+<td>000035140</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>7</td>
+<td>4</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>CSX Transportation</td>
+<td>CSX Transportation</td>
+<td>Class I</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Unassigned</td>
+<td>POINT (0 0)</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">4</th>
+<td>CSX</td>
+<td>CSX Transportation</td>
+<td>2007</td>
+<td>000032761</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>7</td>
+<td>5</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>CSX Transportation</td>
+<td>CSX Transportation</td>
+<td>Class I</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Unassigned</td>
+<td>POINT (0 0)</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">5</th>
+<td>CSX</td>
+<td>CSX Transportation</td>
+<td>2006</td>
+<td>000019091</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>6</td>
+<td>1</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>CSX Transportation</td>
+<td>CSX Transportation</td>
+<td>Class I</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Unassigned</td>
+<td>POINT (0 0)</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">223686</th>
+<td>BNSF</td>
+<td>BNSF Railway Company</td>
+<td>2023</td>
+<td>NW0323113</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>23</td>
+<td>3</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>BNSF Railway Company</td>
+<td>BNSF Railway Company</td>
+<td>Class I</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Unassigned</td>
+<td>POINT (-122.518197 48.459529)</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">223687</th>
+<td>UP</td>
+<td>Union Pacific Railroad Company</td>
+<td>2020</td>
+<td>0220GP005</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>20</td>
+<td>2</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>Union Pacific Railroad Company</td>
+<td>Union Pacific Railroad Company</td>
+<td>Class I</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Unassigned</td>
+<td>POINT (-104.818456 41.127445)</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">223688</th>
+<td>BNSF</td>
+<td>BNSF Railway Company</td>
+<td>2011</td>
+<td>NW0411106</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>11</td>
+<td>4</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>BNSF Railway Company</td>
+<td>BNSF Railway Company</td>
+<td>Class I</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Unassigned</td>
+<td>POINT (0 0)</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">223689</th>
+<td>UP</td>
+<td>Union Pacific Railroad Company</td>
+<td>2015</td>
+<td>0115NP051</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>15</td>
+<td>1</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>Union Pacific Railroad Company</td>
+<td>Union Pacific Railroad Company</td>
+<td>Class I</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Unassigned</td>
+<td>POINT (-104.911355 42.761856)</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">223690</th>
+<td>UP</td>
+<td>Union Pacific Railroad Company</td>
+<td>2015</td>
+<td>0315PC006</td>
+<td>https://safetydata.fra.dot.gov/Officeofsafety/...</td>
+<td>15</td>
+<td>3</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>...</td>
+<td>Union Pacific Railroad Company</td>
+<td>Union Pacific Railroad Company</td>
+<td>Class I</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Unassigned</td>
+<td>Yes</td>
+<td>Unassigned</td>
+<td>POINT (-110.946591 42.024589)</td>
+</tr>
+</tbody>
+</table>
+
+<p>84200 rows × 155 columns</p>
+</div>
+</div>
+</div>
+<div id="e7cd1f3e12b187b" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-20T01:37:36.498466700Z&quot;,&quot;start_time&quot;:&quot;2026-03-20T01:37:36.064618200Z&quot;}}" data-execution_count="7">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Matplotlib bar chart</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>sns.barplot(data<span class="op">=</span>df_filtered, x<span class="op">=</span><span class="st">"Reporting Railroad Code"</span>, y<span class="op">=</span><span class="st">"Equipment Damage Cost"</span>, errorbar<span class="op">=</span><span class="va">None</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Equipment Damage Cost by Railroad"</span>)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Reporting Railroad Code"</span>)<span class="op">;</span> plt.ylabel(<span class="st">"Equipment Damage Cost ($)"</span>)</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="DATS%202102%20Midterm_files/figure-html/cell-13-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="4779b1061de18239" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-20T01:37:56.445719700Z&quot;,&quot;start_time&quot;:&quot;2026-03-20T01:37:55.075417Z&quot;}}" data-execution_count="12">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>sns.barplot(df_new, x<span class="op">=</span><span class="st">"Equipment Damage Cost"</span>, y<span class="op">=</span><span class="st">"Reporting Railroad Code"</span>, hue<span class="op">=</span><span class="st">'Reporting Railroad Code'</span>, legend<span class="op">=</span><span class="va">False</span>, errorbar<span class="op">=</span><span class="va">None</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="DATS%202102%20Midterm_files/figure-html/cell-14-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="exhibit-c-change-in-equipment-damage-costs-over-time" class="level2">
+<h2 class="anchored" data-anchor-id="exhibit-c-change-in-equipment-damage-costs-over-time">Exhibit C: Change in Equipment Damage Costs Over Time</h2>
+<p>This short section is meant to evaluate the change in equipment damage costs over a predetermined period of time for different railroads. This is done using a slope chart which compares the equipment damage costs over a ten year period.</p>
+<div id="dc891e3c8ffb9c64" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-20T01:37:35.932807300Z&quot;,&quot;start_time&quot;:&quot;2026-03-20T01:37:35.381185500Z&quot;}}" data-execution_count="6">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"Equipment Damage Cost"</span>] <span class="op">=</span> pd.to_numeric(df[<span class="st">"Equipment Damage Cost"</span>], errors<span class="op">=</span><span class="st">"coerce"</span>)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>top_codes <span class="op">=</span> df[<span class="st">"Reporting Railroad Code"</span>].value_counts().head(<span class="dv">10</span>).index</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="co">#df = df[df["Reporting Railroad Code"].isin(top_codes)]</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>df_2years <span class="op">=</span> df[df[<span class="st">"Year"</span>].isin([<span class="dv">1997</span>, <span class="dv">2007</span>])]</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>slope <span class="op">=</span> (df_2years</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>         .groupby([<span class="st">"Reporting Railroad Code"</span>, <span class="st">"Year"</span>])[<span class="st">"Equipment Damage Cost"</span>]</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>         .mean()</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>         .unstack()</span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>         .dropna())</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>slope.columns <span class="op">=</span> [<span class="st">"1997"</span>, <span class="st">"2007"</span>]</span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>slope <span class="op">=</span> slope.sort_values(<span class="st">"2007"</span>)</span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">10</span>))</span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a>plt.subplots_adjust(left<span class="op">=</span><span class="fl">0.60</span>)</span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> code, row <span class="kw">in</span> slope.iterrows():</span>
+<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a>    plt.plot([<span class="dv">0</span>, <span class="dv">1</span>], [row[<span class="st">"1997"</span>], row[<span class="st">"2007"</span>]], marker<span class="op">=</span><span class="st">"o"</span>)</span>
+<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a>    plt.text(<span class="op">-</span><span class="fl">0.02</span>, row[<span class="st">"1997"</span>], code, ha<span class="op">=</span><span class="st">"right"</span>, va<span class="op">=</span><span class="st">"center"</span>)</span>
+<span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a>    plt.text(<span class="fl">1.02</span>, row[<span class="st">"2007"</span>], code, ha<span class="op">=</span><span class="st">"left"</span>, va<span class="op">=</span><span class="st">"center"</span>)</span>
+<span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-27"><a href="#cb17-27" aria-hidden="true" tabindex="-1"></a>plt.xticks([<span class="dv">0</span>, <span class="dv">1</span>], [<span class="st">"1997"</span>, <span class="st">"2007"</span>])</span>
+<span id="cb17-28"><a href="#cb17-28" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Year"</span>)</span>
+<span id="cb17-29"><a href="#cb17-29" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Mean Equipment Damage Cost ($)"</span>)</span>
+<span id="cb17-30"><a href="#cb17-30" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Equipment Damage Cost: 1997-2007 for U.S. Railroads"</span>)</span>
+<span id="cb17-31"><a href="#cb17-31" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb17-32"><a href="#cb17-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-33"><a href="#cb17-33" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="DATS%202102%20Midterm_files/figure-html/cell-15-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="written-narrative" class="level2">
+<h2 class="anchored" data-anchor-id="written-narrative">Written Narrative</h2>
+<p>As a Data Science major with a focus in geospatial analysis and transportation studies, this was a unique opportunity to conduct an analysis based on rail transportation. Specifically, I intended to study the safety metrics for each of the major railroads of the United States within the last half-century.</p>
+<p>There were many directions in which I could approach this analysis, because I could, for example, compare injury rates during accidents for each railroad, or perhaps compare costs for equipment damage due to accidents for each railroad. In the end, I chose the latter because it provided me with a greater ability to glean meaningful insights due to the fact that there was significantly more variation for this variable.</p>
+<p>Due to the fact that not doing so would require massive amounts of memory due to the sheer number of railroads in the dataset, only ten railroads were selected for analysis. For most graphs, the first ten railroads in the dataset were selected as a sample due to computational constraints, while, for others, the railroads were selected manually for more meaningful insights.</p>
+<p>I preferred using colors for some of the visualizations so as to better distinguish the data for specific railroads. I also used the railroad codes rather than the full names of the railroads so as to not clutter the graphs.</p>
+<p>Overall, I find the insights that I gleaned from the data incredibly intriguing because it answers many of the questions I pondered about the operations of each of the major railroads in the U.S. and allows me to engage with my knowledge of railroad operations to better interpret these results.</p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
