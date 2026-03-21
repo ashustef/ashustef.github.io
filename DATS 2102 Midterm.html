@@ -137,17 +137,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>DATS 2102 Midterm Project - Safety on the Railroad</h1>
 <section id="overview-of-dataset" class="level3">
 <h3 class="anchored" data-anchor-id="overview-of-dataset">Overview of Dataset</h3>
-<p>This dataset, <strong>railroad.csv</strong>, focuses on the evaluation of major accidents and similar incidents along rights-of-way of major Class I freight railroads to compare the amount of incidents for each railroad and the magnitude of the incident. The following visualizations are based upon <strong>railroad.csv</strong>.</p>
+<p>This dataset, <strong>railroad.csv</strong>, focuses on the evaluation of major accidents and similar incidents along rights-of-way of major Class I freight railroads to compare the number of incidents for each railroad and the magnitude of the incident. The following visualizations are based upon <strong>railroad.csv</strong>.</p>
 <p><em>This dataset was provided by the Federal Railroad Administration (FRA).</em></p>
 </section>
 <section id="research-questions-for-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="research-questions-for-analysis">Research Questions for Analysis</h2>
 <ol type="1">
-<li>Which states have the largest amounts of railroad accidents?</li>
+<li>Which states have the largest numbers of railroad accidents?</li>
 <li>What is the distribution of equipment damage costs among a subset of predetermined railroads?</li>
-<li>Which year has the largest amount of railroad accidents? Are there any statistical outliers?</li>
-<li>Does weather condition or time of day impact the amount of railroad accidents?</li>
-<li>Which division of railroad trackage has the largest amounts of accidents?</li>
+<li>Which year has the largest number of railroad accidents? Are there any statistical outliers?</li>
+<li>Does weather condition or time of day impact the number of railroad accidents?</li>
+<li>Which division of railroad trackage has the largest numbers of accidents?</li>
 </ol>
 <div id="5d0b99395fc6a1a5" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-20T01:37:26.666833800Z&quot;,&quot;start_time&quot;:&quot;2026-03-20T01:37:21.757289200Z&quot;}}" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -1118,7 +1118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="exhibit-a-which-state-has-the-largest-number-of-railroad-accidents-per-square-mile" class="level2">
 <h2 class="anchored" data-anchor-id="exhibit-a-which-state-has-the-largest-number-of-railroad-accidents-per-square-mile">Exhibit A: Which State Has the Largest Number of Railroad Accidents per Square Mile?</h2>
-<p>This short section is meant to answer the question as to which state tends to have the largest amount of railroad accidents per square mile. This question is answered with a simple bar chart using 5 states with the highest amount of accidents in the descending order.</p>
+<p>This short section is meant to answer the question as to which state tends to have the largest number of railroad accidents per square mile. This question is answered with a simple bar chart using 5 states with the highest number of accidents in the descending order.</p>
 <div id="b0a91554d988ff" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-20T02:31:27.449019Z&quot;,&quot;start_time&quot;:&quot;2026-03-20T02:31:27.285870600Z&quot;}}" data-execution_count="40">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Matplotlib bar chart</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>state_joined_sorted <span class="op">=</span> state_joined.sort_values(by<span class="op">=</span><span class="st">"Accidents/Square Mile"</span>, ascending<span class="op">=</span><span class="va">False</span>)[:<span class="dv">5</span>]</span>
@@ -1137,7 +1137,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="exhibit-b-which-railroads-have-the-highest-equipment-damage-costs" class="level2">
 <h2 class="anchored" data-anchor-id="exhibit-b-which-railroads-have-the-highest-equipment-damage-costs">Exhibit B: Which Railroads Have the Highest Equipment Damage Costs?</h2>
-<p>This section is meant to answer the question as to which railroad tends to incur the highest amount of equipment damage costs due to accidents and other similar incidents. This question is answered using distribution plots such as boxplots and violin plots as well as bar graphs.</p>
+<p>This section is meant to answer the question as to which railroad tends to incur the highest number of equipment damage costs due to accidents and other similar incidents. This question is answered using distribution plots such as boxplots and violin plots as well as bar graphs.</p>
 <div id="ddca7fc08a2b0e19" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;ExecuteTime&quot;,&quot;value&quot;:{&quot;end_time&quot;:&quot;2026-03-20T01:37:34.822381Z&quot;,&quot;start_time&quot;:&quot;2026-03-20T01:37:32.912259600Z&quot;}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># REVISED Violin Plot</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>sns.violinplot(data<span class="op">=</span>df_filtered, x<span class="op">=</span><span class="st">'Reporting Railroad Code'</span>, y<span class="op">=</span><span class="st">'Equipment Damage Cost'</span>)</span>
@@ -1877,8 +1877,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="written-narrative" class="level2">
 <h2 class="anchored" data-anchor-id="written-narrative">Written Narrative</h2>
 <p>As a Data Science major with a focus in geospatial analysis and transportation studies, this was a unique opportunity to conduct an analysis based on rail transportation. Specifically, I intended to study the safety metrics for each of the major railroads of the United States within the last half-century.</p>
-<p>There were many directions in which I intended to approach this analysis, because I could, for example, compare injury rates during accidents for each railroad, or perhaps compare costs for equipment damages due to accidents for each railroad. In the end, I chose the latter because it provided me with a greater ability to glean meaningful insights due to the fact that there was significantly more variation for this variable.</p>
-<p>Due to the fact that not doing so would require massive amounts of memory due to the sheer amount of railroads in the dataset, only ten railroads were selected for analysis. For most graphs, these ten railroads were selected arbitrarily (the first ten railroads in the dataset), while, for others, these were selected manually for more meaningful insights.</p>
+<p>There were many directions in which I could approach this analysis, because I could, for example, compare injury rates during accidents for each railroad, or perhaps compare costs for equipment damage due to accidents for each railroad. In the end, I chose the latter because it provided me with a greater ability to glean meaningful insights due to the fact that there was significantly more variation for this variable.</p>
+<p>Due to the fact that not doing so would require massive amounts of memory due to the sheer number of railroads in the dataset, only ten railroads were selected for analysis. For most graphs, the first ten railroads in the dataset were selected as a sample due to computational constraints, while, for others, the railroads were selected manually for more meaningful insights.</p>
 <p>I preferred using colors for some of the visualizations so as to better distinguish the data for specific railroads. I also used the railroad codes rather than the full names of the railroads so as to not clutter the graphs.</p>
 <p>Overall, I find the insights that I gleaned from the data incredibly intriguing because it answers many of the questions I pondered about the operations of each of the major railroads in the U.S. and allows me to engage with my knowledge of railroad operations to better interpret these results.</p>
 </section>
